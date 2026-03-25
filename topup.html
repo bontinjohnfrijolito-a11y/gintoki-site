@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="ht"><head><meta charset="UTF-8"><title>Top-Up</title><style>
+body{background:#000;color:#00f7ff;text-align:center;font-family:Arial}
+input,select{padding:10px;margin:10px;width:200px}
+.btn{padding:10px 20px;background:#00f7ff;color:#000;border:none;border-radius:10px}
+#msg{margin-top:15px;color:#0f0}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;text-decoration:none;font-size:20px}
+</style></head>
+<body>
+
+<h1>🔥 TOP UP VIP 💎</h1>
+
+<select id="pack">
+<option>100 + 10 Diamonds</option>
+<option>200 + 20 Diamonds</option>
+</select>
+
+<h3>Prix: 175 HTG</h3>
+
+<input type="text" id="id" placeholder="Game ID"><br>
+
+<button class="btn" onclick="pay()">Achte kounya</button>
+
+<div id="msg"></div>
+
+<div style="border:1px solid #00f7ff;padding:10px;margin-top:20px">
+<p>💳 NatCash / MonCash</p>
+<p>📱 +509 32 31 6306</p>
+</div>
+
+<a class="whatsapp" href="https://wa.me/50932316306">💬</a>
+
+<script>
+function pay(){
+let id=document.getElementById("id").value;
+if(id===""){
+document.getElementById("msg").innerHTML="❌ Mete Game ID";
+}else{
+document.getElementById("msg").innerHTML="✅ Demann voye! Kontakte nou sou WhatsApp";
+}
+}
+</script>
+
+</body></html>
