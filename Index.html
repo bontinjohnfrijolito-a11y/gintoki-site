@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GINTOKI IOS XIT</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: monospace;
+  background: black;
+  color: #00ffcc;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+/* LOGO */
+.logo {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px cyan;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* TYPING EFFECT */
+.typing {
+  font-size: 20px;
+  border-right: 2px solid #00ffcc;
+  display: inline-block;
+  padding-right: 5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: transparent;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background: #00ffcc;
+  color: black;
+}
+
+/* SERVICES */
+.services {
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  background: #050505;
+  border: 1px solid #00ffcc;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00ffcc;
+  color: black;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 1px solid #00ffcc;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<img src="logo.png" class="logo"><br>
+🔥 GINTOKI IOS XIT
+</header>
+
+<div class="hero">
+<h2 class="typing" id="text"></h2>
+
+<p>Unlock iPhone • Android • Logo Design • VIP Services</p>
+
+<button class="btn" onclick="buy()">Achte sèvis</button>
+</div>
+
+<section class="services">
+<h2>💼 SERVICES</h2>
+
+<div class="card">📱 iPhone Unlock</div>
+<div class="card">🤖 Android Flash</div>
+<div class="card">🎨 Logo Design</div>
+<div class="card">💎 VIP Access</div>
+
+</section>
+
+<a href="https://wa.me/50939237649" class="whatsapp">💬</a>
+
+<footer>
+© 2026 GINTOKI XIT | VIP SYSTEM 🔥
+</footer>
+
+<script>
+
+/* TYPING EFFECT */
+let text = "Welcome to GINTOKI VIP SYSTEM...";
+let i = 0;
+
+function typing() {
+  if (i < text.length) {
+    document.getElementById("text").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 50);
+  }
+}
+
+typing();
+
+/* BUTTON */
+function buy() {
+  alert("Kontakte nou sou WhatsApp pou achte 🔥");
+}
+
+</script>
+
+</body>
+</html>
